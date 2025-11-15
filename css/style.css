@@ -53,7 +53,7 @@ body {
 }
 /* Main Hero Section Styles */
 .hero {
-    background-image: url('/assets/images/background.jpg');
+    background-image: url('../assets/images/background.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     /* background-color: #363D73; */
@@ -123,6 +123,11 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
     padding: 0; 
     margin-right: 5rem;
+    transition: transform 0.3s ease-in-out; 
+}
+.about .about-image img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); 
 }
 
 /* Portfolio section styles */
@@ -159,6 +164,7 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 2rem 0;
+    flex-wrap: wrap;
 }
 .my-row .my-col {
     text-align: center;
@@ -192,6 +198,39 @@ body {
     transform: scale(1.05); 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); 
 }
+
+
+/* Certificates Section Styles */
+.certificates {
+    padding: 4rem 5rem;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.certificates-content {
+    margin-top: 2rem;
+}
+
+.certificates-row {
+    justify-content: center;
+    gap: 30px;
+}
+
+.cert-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; 
+}
+
+.cert-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
 /* Contact section styles */
 .contact {
     padding: 0 5rem;
@@ -316,6 +355,7 @@ body {
     cursor: pointer;
     letter-spacing: 1px;
     border: none;
+    text-decoration: none;
 }
 .common-btn {
     background-color: #2578c6;
