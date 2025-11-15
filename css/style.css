@@ -123,8 +123,12 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
     padding: 0; 
     margin-right: 5rem;
+    transition: transform 0.3s ease-in-out; 
 }
-
+.about .about-image img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); 
+}
 /* Portfolio section styles */
 .portfolio {
     margin: 4.8rem 0;
@@ -361,5 +365,6 @@ body {
 .blue-text {
     color: #363D73;
 }
+
 
 
