@@ -14,9 +14,11 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-image: linear-gradient(90deg, #74D7BB, #53C8B6, #35A99C);
+    background-image: linear-gradient(90deg, #363D73, #2794B3);
     background-color: transparent;
+    z-index: 1000;
 }
+
 .logo {
     padding: 0 5rem;
 }
@@ -99,20 +101,30 @@ body {
 .about {
     display: flex;
     align-items: center;
-    background-image: linear-gradient(45deg, #363D73, #2794B3);
+    background-image: linear-gradient(90deg, #000000, #bfd1d6);
     justify-content: space-between;
     width: 100%;
 }
 .about .about-text {
-    width: 450px;
+    width: 450px; 
+    max-width: 550px; 
     color: #fff;
     padding: 5rem 1rem 5rem 5rem;
+    text-align: justify; 
+    line-height: 1.6; 
 }
+
 .about .about-image img {
     height: 400px;
-    width: 450px;
-    padding: 5rem 5rem 5rem 1rem;
+    width: 400px; 
+    object-fit: cover; 
+    border-radius: 50%; 
+    border: 5px solid rgba(255, 255, 255, 0.5); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+    padding: 0; 
+    margin-right: 5rem;
 }
+
 /* Portfolio section styles */
 .portfolio {
     margin: 4.8rem 0;
@@ -161,6 +173,7 @@ body {
     border-radius: 20px;
     background-image: linear-gradient(#74D7BB, #53C8B6, #35A99C);
     padding: 1rem;
+    transition: transform 0.3s ease-in-out;
 }
 .icon {
     height: 100px;
@@ -174,6 +187,10 @@ body {
 .icon svg {
     font-size: 30px;
     color: #fff;
+}
+.my-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); 
 }
 /* Contact section styles */
 .contact {
@@ -204,10 +221,11 @@ body {
 }
 /* Footer Styles */
 .footer {
-    background-color: #000;
-    color: #fff;
+    background-color: #b9c9d1;
+    color: #000000;
     padding: 2rem;
 }
+
 .footer-list-items {
     display: flex;
     align-items: center;
@@ -216,13 +234,37 @@ body {
     width: 50px;
     margin: 1rem 1rem 0 1rem;
     border-radius: 50%;
-    background-color: #53C8B6;
+    background-color: transparent; 
+    transition: all 0.3s ease-in-out;
 }
+
+/* Real Social Media Colors (Solid Circle Background) */
+
+.footer-list-items:nth-child(1) { /* Facebook */
+    background-color: #1877F2; 
+}
+.footer-list-items:nth-child(2) { /* LinkedIn */
+    background-color: #0A66C2;
+}
+.footer-list-items:nth-child(3) { /* GitHub */
+    background-color: #181717; 
+}
+.footer-list-items:nth-child(4) { /* X (Twitter) */
+    background-color: #000000;
+}
+
+/* Hover effect: Scale the whole container */
+.footer-list-items:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
+}
+
 .footer-links {
     font-size: 24px;
-    color: #fff;
+    color: white; 
     text-decoration: none;
 }
+
 .social-links {
     display: flex;
     align-items: center;
@@ -257,11 +299,16 @@ body {
 }
 
 .links {
+    display: inline-block;
     border-bottom: 2px solid transparent;
-    transition: all 0.25s;
+    transition: all 0.25s ease-in-out;
     padding: 5px;
     text-decoration: none;
     color: #fff;
+}
+.links:hover {
+    border-bottom: 2px solid #fff;
+    transform: scale(1.1); 
 }
 .btn {
     padding: 10px 20px;
@@ -271,17 +318,20 @@ body {
     border: none;
 }
 .common-btn {
-    background-color: #35A99C;
+    background-color: #2578c6;
     color: #fff;
-    border: 2px solid #35A99C;
-    transition: all 0.25s;
+    border: 2px solid #355ea9;
+    transition: all 0.25s ease-in-out;
 }
+
 .common-btn:hover {
+    transform: scale(1.1); 
     background-color: #fff;
     color: #35A99C;
     border: 2px solid #35A99C;
     outline: none;
 }
+
 .ghost-btn {
     background-color: #fff;
     color: #35A99C;
