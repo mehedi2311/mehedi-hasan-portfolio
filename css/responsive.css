@@ -48,10 +48,11 @@
 /* CSS for mobile devices */
 @media screen and (min-width: 280px) and (max-width: 576px) {
     .hero {
-        justify-content: center;
-        color: #fff;
-        background-image: radial-gradient(circle, rgb(15 14 14 / 30%), rgb(102 96 96 / 40%), rgb(163 160 160 / 16%)), url('/mehedi-hasan-portfolio/assets/images/background.jpg')
-    }
+        justify-content: center;
+        color: #fff;
+        background-image: radial-gradient(..., url('../assets/images/background.jpg'))
+        /* background-color: #363D73; */
+    }
     .sub-heading {
         color: #fff;
     }
@@ -140,5 +141,3 @@
         margin: 0;
     }
 }
-
-
