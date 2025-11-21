@@ -87,7 +87,7 @@
     .about {
         flex-direction: column;
     }
-    .about.about-text {
+    .about .about-text {
         width: 90%;
         padding: 1rem;
         max-width: none;
@@ -141,3 +141,4 @@
         margin: 0;
     }
 }
+
