@@ -1,5 +1,3 @@
-// Modern Portfolio JavaScript - Mehedi Hasan
-
 // Navbar Scroll Effect
 const navbar = document.getElementById('navbar');
 let lastScroll = 0;
@@ -305,3 +303,4 @@ const imageObserver = new IntersectionObserver((entries, observer) => {
 });
 
 images.forEach(img => imageObserver.observe(img));
+
