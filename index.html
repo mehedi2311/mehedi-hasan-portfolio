@@ -1,459 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mehedi Hasan - Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
-
 <body>
-    <!-- Navbar header section -->
-    <header class="header">
-        <nav class="navbar">
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
             <div class="logo">
-                <h2 class="logo-heading">
-                    <i class="fas fa-user-tie"></i>&nbsp;Mehedi Hasan</h2>
+                <i class="fas fa-user-tie"></i> Mehedi Hasan
             </div>
             <div class="hamburger" id="hamburger">
-                <i class="fas fa-bars hamburger-icon"></i>
-                <i class="fas fa-times cross-icon"></i>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="menu">
-                <ul class="menu-list">
-                    <li class="menu-list-items">
-                        <a class="links" href="#home">
-                            <i class="fas fa-home"></i>&nbsp;Home</a>
-                    </li>
-                    <li class="menu-list-items">
-                        <a class="links" href="#portfolio">
-                            <i class="fas fa-th-large"></i>&nbsp;Portfolio</a>
-                    </li>
-                    <li class="menu-list-items">
-                        <a class="links" href="#about">
-                            <i class="fas fa-user"></i>&nbsp;About </a>
-                    </li>
-                    <li class="menu-list-items">
-                        <a class="links" href="#services">
-                            <i class="fas fa-cogs"></i>&nbsp;Services </a>
-                    </li>
-                    <li class="menu-list-items">
-                        <a class="links" href="#certificates">
-                            <i class="fas fa-award"></i>&nbsp;Achievements </a>
-                    </li>
-                    <li class="menu-list-items">
-                        <a class="links" href="#contact"> 
-                            <i class="fas fa-envelope"></i>&nbsp;Contact Me
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <!-- Main hero banner -->
-    <section id="home" class="hero">
-        <div class="intro">
-            <div class="headings">
-                <h3 class="greet-heading">
-                    <i class="fas fa-user-tie"></i>&nbsp;Hello, I'm</h3>
-                <h1 class="my-heading">Mehedi Hasan</h1>
-                <h4 class="sub-heading">
-                    Aspiring Software Engineer with hands-on experience in AI and Web Development.
-                </h4>
-            </div>
-            <div class="intro-buttons">
-                <a class="btn common-btn" href="#contact">
-                    <i class="fas fa-paper-plane"></i>&nbsp;Hire Me</a>
-                <a class="btn common-btn" href="assets/Mehedi_Hasan_CV.pdf" target="_blank"><i class="fas fa-file-pdf"></i>&nbsp;Get Resume</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
+                <li><a href="#certificates"><i class="fas fa-award"></i> Achievements</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content">
+            <h3><i class="fas fa-hand-sparkles"></i> Hello, I'm</h3>
+            <h1>Mehedi Hasan</h1>
+            <h4>Aspiring Software Engineer specializing in AI & Web Development</h4>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Hire Me</a>
+                <a href="assets/Mehedi_Hasan_CV.pdf" target="_blank" class="btn btn-secondary"><i class="fas fa-download"></i> Get Resume</a>
             </div>
         </div>
     </section>
+
     <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
-        <div class="portfolio-heading">
-            <h1 class="my-heading text-center">Featured Portfolio</h1>
-        </div>
-        <div class="portfolio-content">
-            <div class="my-row">
-                <div class="my-col">
-                    <div class="my-card port-card">
-                        <div class="image">
-                            <img src="assets/images/ai.png" alt="Web Design Image">
-                        </div>
-                        <h3 class="greet-heading blue-text">Intelligent Automation Project</h3>
-                        <p class="small-para blue-text">AI-Driven Predictive Analysis</p>
-                    </div>
+    <section id="portfolio">
+        <h2 class="section-title">Featured Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <div class="portfolio-card-image">
+                    <img src="assets/images/ai.png" alt="AI Project">
                 </div>
-                <div class="my-col">
-                    <div class="my-card port-card">
-                        <div class="image">
-                            <img src="assets/images/sqa.png" alt="Web Development Image">
-                        </div>
-                        <h3 class="greet-heading blue-text">
-                            Software Testing & QA
-                        </h3>
-                        <p class="small-para blue-text">Test Case Design & Defect Tracking</p>
-                    </div>
-                </div>
-                <div class="my-col">
-                    <div class="my-card port-card">
-                        <div class="image">
-                            <img src="assets/images/web.png" alt="SEO Image">
-                        </div>
-                        <h3 class="greet-heading blue-text">Front-End Development</h3>
-                        <p class="small-para blue-text">Responsive Web UI/UX</p>
-                    </div>
+                <div class="portfolio-card-content">
+                    <h3>Intelligent Automation Project</h3>
+                    <p>AI-Driven Predictive Analysis using machine learning algorithms</p>
                 </div>
             </div>
-            <div class="my-row">
-                <div class="my-col">
-                    <div class="my-card port-card">
-                        <div class="image">
-                            <img src="assets/images/code.png" alt="Content Writting Image">
-                        </div>
-                        <h3 class="greet-heading blue-text">
-                            Data Structure & Algorithms
-                        </h3>
-                        <p class="small-para blue-text">C, C++, Python Based Problem Solving</p>
-                    </div>
+            <div class="portfolio-card">
+                <div class="portfolio-card-image">
+                    <img src="assets/images/sqa.png" alt="SQA">
                 </div>
-                <div class="my-col">
-                    <div class="my-card port-card">
-                        <div class="image">
-                            <img src="assets/images/db.png" alt="Wordpress Image">
-                        </div>
-                        <h3 class="greet-heading blue-text">
-                            Vector Database Integration
-                        </h3>
-                        <p class="small-para blue-text">
-                            Milvus DB PoC (Proof of Concept)
-                        </p>
-                    </div>
+                <div class="portfolio-card-content">
+                    <h3>Software Testing & QA</h3>
+                    <p>Comprehensive test case design and defect tracking systems</p>
                 </div>
-                <div class="my-col">
-                    <div class="my-card port-card">
-                        <div class="image">
-                            <img src="assets/images/cloud.png" alt="Video Editing Image">
-                        </div>
-                        <h3 class="greet-heading blue-text">
-                            Cloud Computing Cyber Panel
-                        </h3>
-                        <p class="small-para blue-text">Server Management & Virtualization</p>
-                    </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-card-image">
+                    <img src="assets/images/web.png" alt="Web Development">
+                </div>
+                <div class="portfolio-card-content">
+                    <h3>Front-End Development</h3>
+                    <p>Modern responsive web UI/UX with latest technologies</p>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-card-image">
+                    <img src="assets/images/code.png" alt="DSA">
+                </div>
+                <div class="portfolio-card-content">
+                    <h3>Data Structures & Algorithms</h3>
+                    <p>Advanced problem solving with C, C++, and Python</p>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-card-image">
+                    <img src="assets/images/db.png" alt="Database">
+                </div>
+                <div class="portfolio-card-content">
+                    <h3>Vector Database Integration</h3>
+                    <p>Milvus DB Proof of Concept for intelligent data handling</p>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="portfolio-card-image">
+                    <img src="assets/images/cloud.png" alt="Cloud">
+                </div>
+                <div class="portfolio-card-content">
+                    <h3>Cloud Computing Cyber Panel</h3>
+                    <p>Server management, virtualization, and automation</p>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- About Section -->
-    <section id="about" class="about">
-        <div class="about-text">
-            <h1 class="my-heading">About Me</h1>
-            <p class="lead-para">
-                I'm Mehedi Hasan, a final-year Computer Science and Engineering student at Green University of Bangladesh, specializing in Artificial Intelligence (AI) and Software Quality Assurance (SQA). I'm driven by a passion to bridge innovation and reliability, focusing academically and practically on developing intelligent, high-performance, and scalable solutions for real-world applications.
-            </p>
-            <p>
-               With a solid foundation in AI/SQA and strong analytical skills, I am committed to delivering reliable and efficient solutions. My goal is to leverage hands-on experience in system development and software testing to ensure every project meets the highest standards of quality and efficiency. 
-            </p>
-        </div>
-        <div class="about-image">
-            <img src="./assets/images/profile.png" alt="About Image">
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about">
+            <div class="about-image">
+                <img src="./assets/images/profile.png" alt="Mehedi Hasan">
+            </div>
+            <div class="about-text">
+                <h2>Passionate Developer & AI Enthusiast</h2>
+                <p>
+                    I'm Mehedi Hasan, a final-year Computer Science and Engineering student at Green University of Bangladesh, specializing in Artificial Intelligence (AI) and Software Quality Assurance (SQA). I'm driven by a passion to bridge innovation and reliability, focusing academically and practically on developing intelligent, high-performance, and scalable solutions for real-world applications.
+                </p>
+                <p>
+                    With a solid foundation in AI/SQA and strong analytical skills, I am committed to delivering reliable and efficient solutions. My goal is to leverage hands-on experience in system development and software testing to ensure every project meets the highest standards of quality and efficiency.
+                </p>
+            </div>
         </div>
     </section>
+
     <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="services-heading">
-            <h1 class="my-heading text-center">My Services</h1>
-        </div>
-        <div class="services-content">
-            <div class="my-row">
-                <div class="my-col">
-                    <div class="my-card">
-                        <div class="icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <h3 class="greet-heading blue-text">AI Implementation</h3>
-                        <p class="small-para">
-                            Focus on developing and implementing intelligent systems using Python, PyTorch, and TensorFlow for predictive analysis and automation.
-                        </p>
-                        <!-- <p class="small-para">
-                            Web development refers to the creating,
-                            building, and maintaining
-                            of websites. It includes aspects such as
-                            web design, web publishing,
-                            web programming, and database management.
-                            It is the creation of an
-                            application that works over the internet
-                            i.e. websites.
-                        </p> -->
-                    </div>
+    <section id="services">
+        <h2 class="section-title">My Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-brain"></i>
                 </div>
-                <div class="my-col">
-                    <div class="my-card">
-                        <div class="icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <h3 class="greet-heading blue-text">
-                            Software Quality Assurance
-                        </h3>
-                        <p class="small-para">
-                            Expertise in foundational SQA principles, including test case design, defect tracking, and developing robust, reliable software solutions.
-                        </p>
-                        <!-- <p class="small-para">
-                            Web development refers to the creating,
-                            building, and maintaining
-                            of websites. It includes aspects such as
-                            web design, web publishing,
-                            web programming, and database management.
-                            It is the creation of an
-                            application that works over the internet
-                            i.e. websites.
-                        </p> -->
-                    </div>
-                </div>
-                <div class="my-col">
-                    <div class="my-card">
-                        <div class="icon">
-                            <i class="fa-solid fa-code"></i>
-                        </div>
-                        <h3 class="greet-heading blue-text">Web Application Development</h3>
-                        <p class="small-para">
-                            Skilled in front-end development using HTML, CSS, JavaScript, and basic proficiency in React/Django to build responsive and efficient web interfaces.
-                        </p>
-                        <!-- <p class="small-para">
-                            Web development refers to the creating,
-                            building, and maintaining
-                            of websites. It includes aspects such as
-                            web design, web publishing,
-                            web programming, and database management.
-                            It is the creation of an
-                            application that works over the internet
-                            i.e. websites.
-                        </p> -->
-                    </div>
-                </div>
+                <h3>AI Implementation</h3>
+                <p>Developing intelligent systems using Python, PyTorch, and TensorFlow for predictive analysis and automation</p>
             </div>
-            <div class="my-row">
-                <div class="my-col">
-                    <div class="my-card">
-                        <div class="icon">
-                            <i class="fas fa-terminal"></i>
-                        </div>
-                        <h3 class="greet-heading blue-text">
-                            Programming
-                        </h3>
-                        <p class="small-para">
-                           Strong analytical and problem-solving skills applied through Python, C, and C++ for efficient task handling and strategic thinking.
-                        </p>
-                        <!-- <p class="small-para">
-                            Web development refers to the creating,
-                            building, and maintaining of websites.
-                            It includes aspects such as web design,
-                            web publishing, web programming, and
-                            database management. It is the creation of an
-                            application that works over the internet i.e.
-                            websites.
-                        </p> -->
-                    </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-check-circle"></i>
                 </div>
-                <div class="my-col">
-                    <div class="my-card">
-                        <div class="icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <h3 class="greet-heading blue-text">
-                            Database Management
-                        </h3>
-                        <p class="small-para">
-                            Proficient in SQL and MySQL for managing structured data, and familiarity with Milvus Vector DB for intelligent data handling.
-                        </p>
-                        <!-- <p class="small-para">
-                            Web development refers to the creating,
-                            building, and maintaining
-                            of websites. It includes aspects such as
-                            web design, web publishing,
-                            web programming, and database management.
-                            It is the creation of an
-                            application that works over the internet
-                            i.e. websites.
-                        </p> -->
-                    </div>
+                <h3>Software Quality Assurance</h3>
+                <p>Expertise in SQA principles, test case design, defect tracking, and robust software development</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
                 </div>
-                <div class="my-col">
-                    <div class="my-card">
-                        <div class="icon">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <h3 class="greet-heading blue-text">
-                            System Optimization & Cloud
-                        </h3>
-                        <p class="small-para">
-                            Experience with the Cloud Computing Cyber Panel Project, focusing on server management, virtualization, and resource automation for efficiency.
-                        </p>
-                        <!-- <p class="small-para">
-                            Web development refers to the creating,
-                            building, and maintaining
-                            of websites. It includes aspects such as
-                            web design, web publishing,
-                            web programming, and database management.
-                            It is the creation of an
-                            application that works over the internet
-                            i.e. websites.
-                        </p> -->
-                    </div>
+                <h3>Web Application Development</h3>
+                <p>Building responsive and efficient web interfaces using HTML, CSS, JavaScript, React, and Django</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-terminal"></i>
                 </div>
+                <h3>Programming</h3>
+                <p>Strong problem-solving skills with Python, C, and C++ for efficient task handling</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Database Management</h3>
+                <p>Proficient in SQL, MySQL, and Milvus Vector DB for intelligent data management</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                <h3>System Optimization & Cloud</h3>
+                <p>Server management, virtualization, and resource automation for maximum efficiency</p>
             </div>
         </div>
     </section>
 
-
-
-    <!--Certificates Section-->>
-<section class="certificates" id="certificates">
-    <div class="certificates-heading">
-        <h1 class="my-heading text-center">My Certificates</h1>
-        <h3 class="greet-heading text-center">Verify My Credentials Below</h3>
-    </div>
-    
-    <div class="certificates-content">
-        <div class="my-row certificates-row">
-            
-            <div class="my-col cert-card">
-                <h3 class="greet-heading blue-text">SQA Career Launchpad Program</h3>
+    <!-- Certificates Section -->
+    <section id="certificates">
+        <h2 class="section-title">My Certificates</h2>
+        <div class="certificates-grid">
+            <div class="certificate-card">
+                <h3>SQA Career Launchpad Program</h3>
                 <p><strong>Provider:</strong> Ostad | <strong>Year:</strong> 2025</p>
-                <a href="assets/Mehedi Hasan-SQA Career Launchpad 1-C30860.pdf" target="_blank" class="btn common-btn"><i class="fas fa-certificate"></i>&nbsp;View Certificate</a>
+                <a href="assets/Mehedi Hasan-SQA Career Launchpad 1-C30860.pdf" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-certificate"></i> View Certificate
+                </a>
             </div>
-            <div class="my-col cert-card">
-                <h3 class="greet-heading blue-text">(Certification Name)</h3>
-                <p><strong>Provider:</strong> (Name) | <strong>Year:</strong> 2025</p>
-                <a href="assets/certificates/Mehedi Hasan-Certificate-2.pdf" target="_blank" class="btn common-btn"><i class="fas fa-certificate"></i>&nbsp;View Certificate</a>
+            <div class="certificate-card">
+                <h3>Certification Name</h3>
+                <p><strong>Provider:</strong> Provider Name | <strong>Year:</strong> 2025</p>
+                <a href="assets/certificates/certificate-2.pdf" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-certificate"></i> View Certificate
+                </a>
             </div>
-            <div class="my-col cert-card">
-                <h3 class="greet-heading blue-text">(Certification Name)</h3>
-                <p><strong>Provider:</strong> (Name) | <strong>Year:</strong> 2025</p>
-                 <a href="assets/certificates/Mehedi Hasan-Certificate-3.pdf" target="_blank" class="btn common-btn"><i class="fas fa-certificate"></i>&nbsp;View Certificate</a>
+            <div class="certificate-card">
+                <h3>Certification Name</h3>
+                <p><strong>Provider:</strong> Provider Name | <strong>Year:</strong> 2025</p>
+                <a href="assets/certificates/certificate-3.pdf" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-certificate"></i> View Certificate
+                </a>
             </div>
-            <div class="my-col cert-card">
-                <h3 class="greet-heading blue-text">(Certification Name)</h3>
-                <p><strong>Provider:</strong> (Name) | <strong>Year:</strong> 2025</p>
-                 <a href="assets/certificates/Mehedi Hasan-Certificate-3.pdf" target="_blank" class="btn common-btn"><i class="fas fa-certificate"></i>&nbsp;View Certificate</a>
+            <div class="certificate-card">
+                <h3>Certification Name</h3>
+                <p><strong>Provider:</strong> Provider Name | <strong>Year:</strong> 2025</p>
+                <a href="assets/certificates/certificate-4.pdf" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-certificate"></i> View Certificate
+                </a>
             </div>
-            <div class="my-col cert-card">
-                <h3 class="greet-heading blue-text">(Certification Name)</h3>
-                <p><strong>Provider:</strong> (Name) | <strong>Year:</strong> 2025</p>
-                 <a href="assets/certificates/Mehedi Hasan-Certificate-3.pdf" target="_blank" class="btn common-btn"><i class="fas fa-certificate"></i>&nbsp;View Certificate</a>
+            <div class="certificate-card">
+                <h3>Certification Name</h3>
+                <p><strong>Provider:</strong> Provider Name | <strong>Year:</strong> 2025</p>
+                <a href="assets/certificates/certificate-5.pdf" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-certificate"></i> View Certificate
+                </a>
             </div>
-            <div class="my-col cert-card">
-                <h3 class="greet-heading blue-text">(Certification Name)</h3>
-                <p><strong>Provider:</strong> (Name) | <strong>Year:</strong> 2025</p>
-                 <a href="assets/certificates/Mehedi Hasan-Certificate-3.pdf" target="_blank" class="btn common-btn"><i class="fas fa-certificate"></i>&nbsp;View Certificate</a>
+            <div class="certificate-card">
+                <h3>Certification Name</h3>
+                <p><strong>Provider:</strong> Provider Name | <strong>Year:</strong> 2025</p>
+                <a href="assets/certificates/certificate-6.pdf" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-certificate"></i> View Certificate
+                </a>
             </div>
-            <div class="my-col cert-card">
-                <h3 class="greet-heading blue-text">(Certification Name)</h3>
-                <p><strong>Provider:</strong> (Name) | <strong>Year:</strong> 2025</p>
-                 <a href="assets/certificates/Mehedi Hasan-Certificate-3.pdf" target="_blank" class="btn common-btn"><i class="fas fa-certificate"></i>&nbsp;View Certificate</a>
-            </div>
-            <div class="my-col cert-card">
-                <h3 class="greet-heading blue-text">(Certification Name)</h3>
-                <p><strong>Provider:</strong> (Name) | <strong>Year:</strong> 2025</p>
-                 <a href="assets/certificates/Mehedi Hasan-Certificate-3.pdf" target="_blank" class="btn common-btn"><i class="fas fa-certificate"></i>&nbsp;View Certificate</a>
-            </div>
-            <div class="my-col cert-card">
-                <h3 class="greet-heading blue-text">(Certification Name)</h3>
-                <p><strong>Provider:</strong> (Name) | <strong>Year:</strong> 202</p>
-                 <a href="assets/certificates/Mehedi Hasan-Certificate-3.pdf" target="_blank" class="btn common-btn"><i class="fas fa-certificate"></i>&nbsp;View Certificate</a>
-            </div>
-            </div>
-    </div>
-</section>
-
-    <!-- Contact me section -->
-    <section class="contact" id="contact">
-        <div class="contact-heading">
-            <h1 class="my-heading text-center">Contact Me</h1>
         </div>
-        <div class="contact-content">
-            <div class="contact-form-container">
-                <h1 class="greet-heading">Let’s Connect</h1>
-                <form class="contact-form">
-                    <input class="form-controls" type="text" placeholder="Please Enter Your Name">
-                    <input class="form-controls" type="text" placeholder="Please Enter Your Email">
-                    <input class="form-controls" type="text" placeholder="Please Enter Your Phone">
-                    <textarea class="form-controls" placeholder="Please Write your message" name="message" id="message" cols="30" rows="10"></textarea>
-                      </input>
-                    <input class="form-btn btn common-btn" type="submit" value="Send Your Message">
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2>Let's Connect</h2>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
                 </form>
             </div>
-            <div class="contact-details">
-                <h1 class="greet-heading">My Contact Details</h1>
-                <div class="details">
-                    <h5 class="contact-heading">📧EMAIL</h5>
-                    <p class="contact-text">mehedihasan23.official@gmail.com</p>
+            <div class="contact-info">
+                <h2>My Contact Details</h2>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="contact-item-content">
+                        <h5>EMAIL</h5>
+                        <p>mehedihasan23.official@gmail.com</p>
+                    </div>
                 </div>
-                <div class="details">
-                    <h5 class="contact-heading">📱PHONE</h5>
-                    <p class="contact-text">+88 01616-231199</p>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div class="contact-item-content">
+                        <h5>PHONE</h5>
+                        <p>+88 01616-231199</p>
+                    </div>
                 </div>
-                <div class="details">
-                    <h5 class="contact-heading">📞Whatsapp</h5>
-                    <p class="contact-text">+88 01616-231199</p>
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div class="contact-item-content">
+                        <h5>WHATSAPP</h5>
+                        <p>+88 01616-231199</p>
+                    </div>
                 </div>
-                <div class="details">
-                    <h5 class="contact-heading">📍ADDRESS</h5>
-                    <p class="contact-text">West Shewrapara, Shamim Sharani, Agargaon, Dhaka-1216</p>
-                    <!-- <p>Shamim Sharani,</p>
-                    <p>Agargaon, Dhaka-1216</p> -->
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="contact-item-content">
+                        <h5>ADDRESS</h5>
+                        <p>West Shewrapara, Shamim Sharani, Agargaon, Dhaka-1216</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Footer section -->
+
+    <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content text-center">
-            <h4>
-                Copyright © 2025 All rights reserved |
-                This portfolio website template is created
-                by Mehedi Hasan.
-            </h4>
+        <div class="footer-content">
+            <h4>Copyright © 2025 All rights reserved | Created by Mehedi Hasan</h4>
             <div class="social-links">
-                <div class="footer-menu">
-                    <ul class="footer-menu-list">
-                        <li class="footer-list-items">
-                            <a class="footer-links" href="https://www.facebook.com/share/1AEnkvaJMD/">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="footer-list-items">
-                            <a class="footer-links" href="https://www.linkedin.com/in/mehedi-hasan-abdullah">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li class="footer-list-items">
-                            <a class="footer-links" href="https://github.com/mehedi2311">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                        <li class="footer-list-items">
-                            <a class="footer-links" href="https://x.com/mh_official_99">
-                                <i class="fab fa-x-twitter"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <a href="https://www.facebook.com/share/1AEnkvaJMD/" class="social-link" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mehedi-hasan-abdullah" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/mehedi2311" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://x.com/mh_official_99" class="social-link" target="_blank">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
-        integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-        </script>
     <script src="script.js"></script>
 </body>
-
-
 </html>
