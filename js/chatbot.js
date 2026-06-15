@@ -197,7 +197,7 @@ async function sendText(text) {
   history.push({ role: 'user', content: text });
   isLoading = true; showTyping();
   try {
-    const res = await fetch('http://localhost:8000/chat', {
+    const res = await fetch('https://mehedi-hasan-chatbot-backend.onrender.com/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ model: GROQ_MODEL, max_tokens: 2048, messages: [{ role: 'system', content: SYSTEM_PROMPT }, ...history] })
