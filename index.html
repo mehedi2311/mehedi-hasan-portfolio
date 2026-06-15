@@ -1,314 +1,585 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mehedi Hasan - Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mehedi Hasan - AI Engineer & LLM Specialist</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Mehedi Hasan - AI Engineer & LLM Specialist at DataSoft Systems Bangladesh. Expert in LLM fine-tuning, Agentic AI, RAG pipelines, and intelligent automation.">
+  <meta name="keywords" content="Mehedi Hasan, AI Engineer, LLM, Agentic AI, Bangladesh, DataSoft, RAG, FastAPI, QA Automation">
+  <meta name="author" content="Mehedi Hasan">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mehedi Hasan - AI Engineer & LLM Specialist">
+  <meta property="og:description" content="Building production-ready AI systems with LLMs, Agentic AI, and intelligent automation.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/profile.png">
+
+  <!-- Icons & Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/chatbot.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <i class="fas fa-user-tie"></i> Mehedi Hasan
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Portfolio</a></li>
-                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
-                <li><a href="#certificates"><i class="fas fa-award"></i> Achievements</a></li>
-                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="particles" id="particles"></div>
-        <div class="hero-content">
-            <h3><i class="fas fa-hand-sparkles"></i> Hello, I'm</h3>
-            <h1>Mehedi Hasan</h1>
-            <h4>Aspiring AI Engineer Specializing in LLMs, Agentic AI & Intelligent Automation</h4>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Hire Me</a>
-                <a href="assets/Mehedi_Hasan_CV.pdf" target="_blank" class="btn btn-secondary"><i class="fas fa-download"></i> Get Resume</a>
-            </div>
-        </div>
-    </section>
-
-
-<section id="portfolio">
-    <h2 class="section-title">Featured Portfolio</h2>
-    <div class="portfolio-grid">
-        <div class="portfolio-card">
-            <div class="portfolio-card-image">
-                <img src="assets/images/ai.png" alt="AI Project">
-            </div>
-            <div class="portfolio-card-content">
-                <h3>AI-Powered Automation</h3>
-                <p>Intelligent workflow automation with LLMs and predictive insights.</p>
-            </div>
-        </div>
-        <div class="portfolio-card">
-            <div class="portfolio-card-image">
-                <img src="assets/images/sqa.png" alt="SQA">
-            </div>
-            <div class="portfolio-card-content">
-                <h3>Software Quality Assurance</h3>
-                <p>Structured test design, defect tracking, and reliable release validation.</p>
-            </div>
-        </div>
-        <div class="portfolio-card">
-            <div class="portfolio-card-image">
-                <img src="assets/images/web.png" alt="Web Development">
-            </div>
-            <div class="portfolio-card-content">
-                <h3>Responsive Web Development</h3>
-                <p>Modern, user-focused web interfaces built with clean UI/UX practices.</p>
-            </div>
-        </div>
-        <div class="portfolio-card">
-            <div class="portfolio-card-image">
-                <img src="assets/images/code.png" alt="DSA">
-            </div>
-            <div class="portfolio-card-content">
-                <h3>Problem Solving</h3>
-                <p>Algorithmic thinking and efficient coding in C, C++, Java, and Python.</p>
-            </div>
-        </div>
-        <div class="portfolio-card">
-            <div class="portfolio-card-image">
-                <img src="assets/images/db.png" alt="Database">
-            </div>
-            <div class="portfolio-card-content">
-                <h3>Vector Databases</h3>
-                <p>Milvus-based retrieval and semantic search for AI applications.</p>
-            </div>
-        </div>
-        <div class="portfolio-card">
-            <div class="portfolio-card-image">
-                <img src="assets/images/cloud.png" alt="Cloud">
-            </div>
-            <div class="portfolio-card-content">
-                <h3>Cloud Automation</h3>
-                <p>Server management, virtualization, and cloud resource automation.</p>
-            </div>
-        </div>
+<!-- ═══════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      MH<span>.</span>
+    </a>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
     </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#certificates">Achievements</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-bg-glow"></div>
+
+  <div class="hero-inner">
+    <!-- Left: Text -->
+    <div class="hero-text">
+      <div class="hero-eyebrow">
+        <span class="pulse"></span>
+        Available for new opportunities
+      </div>
+
+      <p class="hero-name">Mehedi Hasan</p>
+      <p class="hero-title">AI Engineer &amp; LLM Specialist</p>
+
+      <p class="hero-desc">
+        Building production-ready AI systems with large language models,
+        agentic pipelines, and intelligent automation.
+        Currently at DataSoft Systems Bangladesh Limited.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">
+          <i class="fas fa-paper-plane"></i> Get in Touch
+        </a>
+        <a href="assets/Mehedi_Hasan_CV.pdf" target="_blank" class="btn-outline">
+          <i class="fas fa-download"></i> Download CV
+        </a>
+      </div>
+    </div>
+
+    <!-- Right: Info Card -->
+    <div class="hero-card">
+      <div class="hero-card-header">
+        <div class="hero-avatar">MH</div>
+        <div>
+          <div class="hero-card-name">Mehedi Hasan</div>
+          <div class="hero-card-role">Software Developer · DataSoft</div>
+        </div>
+      </div>
+      <div class="hero-card-body">
+        <div class="info-row">
+          <i class="fas fa-map-marker-alt"></i>
+          <span class="info-row-label">Location</span>
+          <span class="info-row-value">Dhaka, Bangladesh</span>
+        </div>
+        <div class="info-row">
+          <i class="fas fa-graduation-cap"></i>
+          <span class="info-row-label">Education</span>
+          <span class="info-row-value">Computer Science & Engineering, Green University of Bangladesh</span>
+        </div>
+        <div class="info-row">
+          <i class="fas fa-brain"></i>
+          <span class="info-row-label">Specialization</span>
+          <span class="info-row-value">AI & LLM Engineering</span>
+        </div>
+        <div class="info-row">
+          <i class="fas fa-envelope"></i>
+          <span class="info-row-label">Email</span>
+          <span class="info-row-value" style="font-size:0.78rem">mehedihasan23.official<br>@gmail.com</span>
+        </div>
+        <div class="info-row">
+          <i class="fab fa-linkedin-in"></i>
+          <span class="info-row-label">LinkedIn</span>
+          <span class="info-row-value"><a href="https://www.linkedin.com/in/mehedi-hasan-abdullah" target="_blank" style="color:inherit">linkedin.com/in/mehedi-hasan-abdullah</a></span>
+        </div>
+        <div class="info-row">
+          <i class="fab fa-github"></i>
+          <span class="info-row-label">GitHub</span>
+          <span class="info-row-value"><a href="https://github.com/mehedi2311" target="_blank" style="color:inherit">github.com/mehedi2311</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- About Section -->
+<!-- ═══════════════════════════════════════
+     SKILLS
+══════════════════════════════════════════ -->
+<section class="skills-section" id="skills">
+  <div class="container">
+    <p class="section-label reveal">Technical Skills</p>
+    <h2 class="section-title reveal">What I Work With</h2>
+    <p class="section-desc reveal">Full-stack AI engineering across model training, backend systems, automation, and deployment.</p>
+
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <div class="skill-group-icon"><i class="fas fa-brain"></i></div>
+        <div class="skill-group-title">AI & LLM</div>
+        <div class="skill-tags">
+          <span class="skill-tag">LLM Fine-tuning</span>
+          <span class="skill-tag">LoRA / QLoRA</span>
+          <span class="skill-tag">LangChain</span>
+          <span class="skill-tag">Hugging Face</span>
+          <span class="skill-tag">RAG Pipelines</span>
+          <span class="skill-tag">Multi-agent AI</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-icon"><i class="fas fa-server"></i></div>
+        <div class="skill-group-title">Backend Engineering</div>
+        <div class="skill-tags">
+          <span class="skill-tag">FastAPI</span>
+          <span class="skill-tag">Spring Boot</span>
+          <span class="skill-tag">REST APIs</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">TypeScript</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-icon"><i class="fas fa-vial"></i></div>
+        <div class="skill-group-title">QA Automation</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Playwright</span>
+          <span class="skill-tag">Selenium</span>
+          <span class="skill-tag">MCP</span>
+          <span class="skill-tag">Cline</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-icon"><i class="fas fa-database"></i></div>
+        <div class="skill-group-title">Data & Vector DBs</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Milvus</span>
+          <span class="skill-tag">Semantic Search</span>
+          <span class="skill-tag">Embedding Pipelines</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">SQLite</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-icon"><i class="fas fa-cloud"></i></div>
+        <div class="skill-group-title">DevOps & Cloud</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">CI/CD</span>
+          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">Git / GitHub</span>
+          <span class="skill-tag">Server Management</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-icon"><i class="fas fa-robot"></i></div>
+        <div class="skill-group-title">Local LLM Infra</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Ollama</span>
+          <span class="skill-tag">Multi-LLM</span>
+          <span class="skill-tag">llama.cpp</span>
+          <span class="skill-tag">Letta AI</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     ABOUT
+══════════════════════════════════════════ -->
 <section id="about">
-    <h2 class="section-title">About Me</h2>
-    <div class="about">
-        <div class="about-image">
-            <img src="./assets/images/profile.png" alt="Mehedi Hasan">
+  <div class="container">
+    <p class="section-label reveal">About Me</p>
+    <h2 class="section-title reveal">AI Engineer Based in <span>Dhaka, Bangladesh</span></h2>
+
+    <div style="display:grid;grid-template-columns:1.6fr 1fr;gap:4rem;margin-top:2.5rem;align-items:center">
+      
+      <!-- About Text -->
+      <div class="reveal">
+        <p style="color:var(--muted);line-height:1.9;margin-bottom:1.25rem;font-size:0.95rem">
+          I'm <strong style="color:var(--white)">Mehedi Hasan</strong>, a Computer Science graduate from
+          Green University of Bangladesh and a <strong style="color:var(--white)">Software Developer</strong>
+          at <strong style="color:var(--white)">DataSoft Systems Bangladesh Limited</strong>. I specialize in
+          building production-ready AI systems - from LLM fine-tuning and RAG pipelines to autonomous
+          multi-agent workflows that solve real enterprise problems.
+        </p>
+        <p style="color:var(--muted);line-height:1.9;margin-bottom:1.25rem;font-size:0.95rem">
+          My background in software quality assurance gave me a strong foundation in building reliable,
+          testable systems - a mindset I carry into every AI application I design. I believe great AI
+          isn't just intelligent, it's trustworthy, scalable, and built to last.
+        </p>
+        <p style="color:var(--muted);line-height:1.9;font-size:0.95rem">
+          My goal is to lead innovation in agentic AI architectures and end-to-end intelligent automation -
+          creating systems that don't just assist humans, but actively drive business outcomes at scale.
+          I'm continuously exploring LLM orchestration, autonomous pipelines, and the frontier of
+          what AI can reliably achieve in production environments.
+        </p>
+      </div>
+
+      <!-- Profile Picture -->
+      <div class="reveal" style="display:flex;justify-content:center">
+        <div style="position:relative;width:260px;height:260px">
+          <div style="position:absolute;inset:-3px;border-radius:50%;background:conic-gradient(from 0deg,#3b82f6,#1e40af,#06b6d4,#3b82f6);animation:spin 4s linear infinite;z-index:0;filter:blur(2px);opacity:0.75"></div>
+          <img src="assets/images/profile.png" alt="Mehedi Hasan"
+            style="width:260px;height:260px;border-radius:50%;object-fit:cover;object-position:top;border:4px solid #0f172a;position:relative;z-index:1">
         </div>
-        <div class="about-text">
-            <h2>AI Engineer & LLM Specialist</h2>
-            <p>
-                I'm Mehedi Hasan, a Computer Science and Engineering graduate from Green University of Bangladesh. Currently working as a <strong>Software Developer</strong> at <strong>DataSoft Systems Bangladesh Limited</strong>, where I specialize in <strong>Large Language Models (LLMs)</strong>, <strong>Agentic AI</strong>, and <strong>Intelligent Automation</strong>.
-            </p>
-            <p>
-                I design and build production-ready AI systems using LLM fine-tuning (LoRA/QLoRA), AI orchestration, RAG pipelines, Python automation, FastAPI, and Spring Boot development. Passionate about creating scalable, enterprise-grade AI solutions that deliver real business impact.
-            </p>
-        </div>
+      </div>
+
     </div>
+  </div>
 </section>
 
-    <!-- Services Section -->
-<section id="services">
-    <h2 class="section-title">My Services</h2>
+<style>
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+</style>
+
+<!-- ═══════════════════════════════════════
+     EXPERIENCE
+══════════════════════════════════════════ -->
+<section id="experience" style="background:rgba(255,255,255,0.015);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div class="container">
+    <p class="section-label reveal">Work Experience</p>
+    <h2 class="section-title reveal">Professional History</h2>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">September 2025 — Present</div>
+        <div class="timeline-company">DataSoft Systems Bangladesh Limited</div>
+        <div class="timeline-role">Software Developer</div>
+        <span class="timeline-badge">Full-time · On-site</span>
+        <p class="timeline-desc">
+          Contributing to enterprise AI development with a focus on LLM integration, agentic workflows, and scalable backend engineering - translating cutting-edge AI research into production-ready systems.
+        </p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">October 2025 — March 2026</div>
+        <div class="timeline-company">360 Pathshala</div>
+        <div class="timeline-role">SQA Engineer Intern</div>
+        <span class="timeline-badge">Internship · Remote</span>
+        <p class="timeline-desc">
+          Gained hands-on industrial experience in software quality assurance through manual and automated testing practices. This foundation bridged into AI-powered QA automation, enabling me to build intelligent test pipelines and contribute meaningfully to modern software delivery.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     PORTFOLIO / PROJECTS
+══════════════════════════════════════════ -->
+<section id="portfolio">
+  <div class="container">
+    <p class="section-label reveal">Portfolio</p>
+    <h2 class="section-title reveal">Featured <span>Projects</span></h2>
+    <p class="section-desc reveal">A selection of real systems built and shipped.</p>
+
+    <div class="portfolio-grid">
+      <div class="project-card reveal">
+        <div class="project-icon"><i class="fas fa-robot"></i></div>
+        <div class="project-title">Agentic QA Automation Pipeline</div>
+        <p class="project-desc">
+          Fully autonomous 5-agent QA pipeline accepting PDF/DOCX use-case documents.
+          Sequential orchestration: use-case-analyzer → test-planner → test-generator
+          → test-healer → report-compiler. Real browser interaction via MCP.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Playwright</span>
+          <span class="project-tag">TypeScript</span>
+          <span class="project-tag">MCP</span>
+          <span class="project-tag">Node.js</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-icon"><i class="fas fa-ambulance"></i></div>
+        <div class="project-title">Emergency Ambulance Reservation</div>
+        <p class="project-desc">
+          Web-based system for booking nearby ambulances using live GPS tracking and
+          driver availability. Features user/driver login, hospital lookup, real-time
+          location mapping, and emergency booking management.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">PHP</span>
+          <span class="project-tag">MySQL</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">GPS API</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-icon"><i class="fas fa-heartbeat"></i></div>
+        <div class="project-title">Heal Point: Healthcare Management</div>
+        <p class="project-desc">
+          Android mobile app for lab tests, doctor appointments, and digital health
+          articles. Secure authentication, appointment scheduling, and patient data
+          management - all in one platform.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Android Studio</span>
+          <span class="project-tag">Java</span>
+          <span class="project-tag">XML</span>
+          <span class="project-tag">SQLite</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-icon"><i class="fas fa-brain"></i></div>
+        <div class="project-title">AI-Powered Automation</div>
+        <p class="project-desc">
+          Intelligent workflow automation using LLMs and predictive insights.
+          Document processing, data extraction, and multi-step pipelines built
+          with LangChain and Hugging Face models.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">LangChain</span>
+          <span class="project-tag">FastAPI</span>
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Multi-LLM</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-icon"><i class="fas fa-server"></i></div>
+        <div class="project-title">Cloud Computing Web Panel</div>
+        <p class="project-desc">
+          Final year project focused on server management, virtualization, and resource automation to optimize cloud system efficiency and performance
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Linux</span>
+          <span class="project-tag">Docker</span>
+          <span class="project-tag">Virtualization</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SERVICES
+══════════════════════════════════════════ -->
+<section class="services-section" id="services">
+  <div class="container">
+    <p class="section-label reveal">Services</p>
+    <h2 class="section-title reveal">What I Can Do <span>For You</span></h2>
+
     <div class="services-grid">
-        <div class="service-card">
-            <div class="service-icon">
-                <i class="fas fa-brain"></i>
-            </div>
-            <h3>LLM Fine-Tuning & Integration</h3>
-            <p>LoRA/QLoRA fine-tuning, RAG systems, LangChain integration for enterprise AI applications</p>
-        </div>
-        <div class="service-card">
-            <div class="service-icon">
-                <i class="fas fa-robot"></i>
-            </div>
-            <h3>Agentic AI Development</h3>
-            <p>Multi-agent workflows, AI orchestration, autonomous systems with LLM-powered decision making</p>
-        </div>
-        <div class="service-card">
-            <div class="service-icon">
-                <i class="fas fa-code"></i>
-            </div>
-            <h3>AI Backend Engineering</h3>
-            <p>FastAPI, Spring Boot REST APIs, Python automation for scalable AI infrastructure</p>
-        </div>
-        <div class="service-card">
-            <div class="service-icon">
-                <i class="fas fa-cogs"></i>
-            </div>
-            <h3>Intelligent Automation</h3>
-            <p>Workflow automation, document processing, data extraction using advanced LLM pipelines</p>
-        </div>
-        <div class="service-card">
-            <div class="service-icon">
-                <i class="fas fa-database"></i>
-            </div>
-            <h3>Vector Database \& RAG</h3>
-            <p>Milvus, semantic search, retrieval-augmented generation for production AI systems</p>
-        </div>
-        <div class="service-card">
-            <div class="service-icon">
-                <i class="fas fa-docker"></i>
-            </div>
-            <h3>AI DevOps \& Deployment</h3>
-            <p>Docker containerization, CI/CD pipelines, monitoring for reliable AI model deployment</p>
-        </div>
+      <div class="service-card reveal">
+        <div class="service-num">01</div>
+        <div class="service-icon"><i class="fas fa-brain"></i></div>
+        <div class="service-title">LLM Fine-Tuning & Integration</div>
+        <p class="service-desc">LoRA/QLoRA fine-tuning, RAG systems, LangChain integration for enterprise AI applications.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">02</div>
+        <div class="service-icon"><i class="fas fa-robot"></i></div>
+        <div class="service-title">Agentic AI Development</div>
+        <p class="service-desc">Multi-agent workflows, AI orchestration, autonomous systems with LLM-powered decision making.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">03</div>
+        <div class="service-icon"><i class="fas fa-code"></i></div>
+        <div class="service-title">AI Backend Engineering</div>
+        <p class="service-desc">FastAPI, Spring Boot REST APIs, Python automation for scalable AI infrastructure.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">04</div>
+        <div class="service-icon"><i class="fas fa-vial"></i></div>
+        <div class="service-title">SQA & Test Automation</div>
+        <p class="service-desc">Functional & non-functional testing, Playwright-based autonomous pipelines, defect tracking and structured QA reporting.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">05</div>
+        <div class="service-icon"><i class="fas fa-database"></i></div>
+        <div class="service-title">Cloud & Server Automation</div>
+        <p class="service-desc">Server management, virtualization, resource automation and cloud system optimization.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-num">06</div>
+        <div class="service-icon"><i class="fas fa-cloud"></i></div>
+        <div class="service-title">AI DevOps & Deployment</div>
+        <p class="service-desc">Docker containerization, CI/CD pipelines, Linux server management for reliable AI model deployment.</p>
+      </div>
     </div>
+  </div>
 </section>
 
-    <!-- Certificates Section -->
-    <section id="certificates">
-        <h2 class="section-title">My Certificates</h2>
-        <div class="certificates-grid">
-            <div class="certificate-card">
-                <h3>SQA Career Launchpad Program</h3>
-                <p><strong>Provider:</strong> Ostad | <strong>Year:</strong> 2025</p>
-                <a href="assets/Mehedi Hasan-SQA Career Launchpad 1-C30860.pdf" target="_blank" class="btn btn-primary">
-                    <i class="fas fa-certificate"></i> View Certificate
-                </a>
-            </div>
-            <div class="certificate-card">
-                <h3>Job Ready: Employability Skills (Basic Level)</h3>
-                <p>
-                    <strong>Provider:</strong> Wadhwani Foundation |
-                    <strong>Year:</strong> 2025
-                </p>
-                <a href="assets/Wadhwani Foundation Certificate - Mehedi Hasan.pdf" 
-                target="_blank" 
-                class="btn btn-primary">
-                    <i class="fas fa-certificate"></i> View Certificate
-                </a>
-            </div>
-            <!-- <div class="certificate-card">
-                <h3>Certification Name</h3>
-                <p><strong>Provider:</strong> Provider Name | <strong>Year:</strong> 2025</p>
-                <a href="assets/certificates/certificate-3.pdf" target="_blank" class="btn btn-primary">
-                    <i class="fas fa-certificate"></i> View Certificate
-                </a>
-            </div> -->
-            <!-- <div class="certificate-card">
-                <h3>Certification Name</h3>
-                <p><strong>Provider:</strong> Provider Name | <strong>Year:</strong> 2025</p>
-                <a href="assets/certificates/certificate-4.pdf" target="_blank" class="btn btn-primary">
-                    <i class="fas fa-certificate"></i> View Certificate
-                </a>
-            </div>
-            <div class="certificate-card">
-                <h3>Certification Name</h3>
-                <p><strong>Provider:</strong> Provider Name | <strong>Year:</strong> 2025</p>
-                <a href="assets/certificates/certificate-5.pdf" target="_blank" class="btn btn-primary">
-                    <i class="fas fa-certificate"></i> View Certificate
-                </a>
-            </div>
-            <div class="certificate-card">
-                <h3>Certification Name</h3>
-                <p><strong>Provider:</strong> Provider Name | <strong>Year:</strong> 2025</p>
-                <a href="assets/certificates/certificate-6.pdf" target="_blank" class="btn btn-primary">
-                    <i class="fas fa-certificate"></i> View Certificate
-                </a>
-            </div> -->
-        </div>
-    </section>
+<!-- ═══════════════════════════════════════
+     CERTIFICATES / ACHIEVEMENTS
+══════════════════════════════════════════ -->
+<section id="certificates">
+  <div class="container">
+    <p class="section-label reveal">Achievements</p>
+    <h2 class="section-title reveal">Certificates & <span>Awards</span></h2>
 
-    <!-- Contact Section -->
-<section id="contact">
-    <h2 class="section-title">Contact Me</h2>
-    <div class="contact-container">
-        <div class="contact-form">
-            <h2>Let's Connect</h2>
-            <p>Discuss AI projects, LLM integration, or intelligent automation solutions</p>
-            <form>
-                <div class="form-group">
-                    <input type="text" placeholder="Your Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Your Email" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" placeholder="Your Phone">
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Tell me about your AI project..." required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">
-                    <i class="fas fa-paper-plane"></i> Send Message
-                </button>
-            </form>
+    <div class="certs-grid">
+      <div class="cert-card reveal">
+        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+        <div>
+          <div class="cert-title">SQA Career Launchpad Program</div>
+          <div class="cert-meta">Ostad &nbsp;·&nbsp; 2025</div>
+          <a href="assets/Mehedi Hasan-SQA Career Launchpad.pdf" target="_blank" class="cert-link">
+            <i class="fas fa-external-link-alt"></i> View Certificate
+          </a>
         </div>
-        
-        <div class="contact-info">
-            <h2>Reach Me Directly</h2>
-            <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <div class="contact-item-content">
-                    <h5>EMAIL</h5>
-                    <p>mehedihasan23.official@gmail.com</p>
-                </div>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <div class="contact-item-content">
-                    <h5>PHONE</h5>
-                    <p>+88 01616-231199, +88 01771-803430</p>
-                </div>
-            </div>
-            <div class="contact-item">
-                <i class="fab fa-whatsapp"></i>
-                <div class="contact-item-content">
-                    <h5>WHATSAPP</h5>
-                    <p>+88 01616-231199</p>
-                </div>
-            </div>
-            <div class="contact-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <div class="contact-item-content">
-                    <h5>ADDRESS</h5>
-                    <p>West Shewrapara, Shamim Sharani<br>Agargaon, Dhaka-1216</p>
-                </div>
-            </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon"><i class="fas fa-award"></i></div>
+        <div>
+          <div class="cert-title">Job Ready: Employability Skills</div>
+          <div class="cert-meta">Wadhwani Foundation &nbsp;·&nbsp; 2025</div>
+          <a href="assets/Wadhwani Foundation Certificate - Mehedi Hasan.pdf" target="_blank" class="cert-link">
+            <i class="fas fa-external-link-alt"></i> View Certificate
+          </a>
         </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon"><i class="fas fa-trophy"></i></div>
+        <div>
+          <div class="cert-title">Vice Chancellor's Award</div>
+          <div class="cert-meta">Green University of Bangladesh &nbsp;·&nbsp; Academic Excellence</div>
+        </div>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-icon"><i class="fas fa-medal"></i></div>
+        <div>
+          <div class="cert-title">Dean's Award</div>
+          <div class="cert-meta">Green University of Bangladesh &nbsp;·&nbsp; Academic Excellence</div>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- Footer -->
+<!-- ═══════════════════════════════════════
+     CONTACT
+══════════════════════════════════════════ -->
+<section id="contact" style="background:rgba(255,255,255,0.015);border-top:1px solid var(--border)">
+  <div class="container">
+    <p class="section-label reveal">Contact</p>
+    <h2 class="section-title reveal">Let's Build <span>Together</span></h2>
+    <p class="section-desc reveal">Have an AI project, LLM integration, or automation challenge? Reach out directly.</p>
+
+    <div class="contact-grid">
+      <!-- Info -->
+      <div class="reveal">
+        <div class="contact-info-list">
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="contact-item-label">Email</div>
+              <div class="contact-item-value">mehedihasan23.official@gmail.com</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="contact-item-label">Phone</div>
+              <div class="contact-item-value">+88 01616-231199 &nbsp;/&nbsp; +88 01771-803430</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <div class="contact-item-label">WhatsApp</div>
+              <div class="contact-item-value">+88 01616-231199</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="contact-item-label">Address</div>
+              <div class="contact-item-value">West Shewrapara, Agargaon, Dhaka-1216</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-row" style="margin-top:1.5rem">
+          <a href="https://www.facebook.com/share/1AEnkvaJMD/" class="social-btn" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/in/mehedi-hasan-abdullah" class="social-btn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/mehedi2311" class="social-btn" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://x.com/mh_official_99" class="social-btn" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="contact-form-wrap reveal">
+        <div class="contact-form-title">Send a Message</div>
+        <form id="contact-form" action="https://formspree.io/f/mrevrqvr" method="POST">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" name="name" placeholder="Your name..." required>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" name="email" placeholder="Your email..." required>
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="tel" name="phone" placeholder="Your phone number..." required>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" placeholder="Tell me about your project…" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" id="submit-btn" style="width:100%;justify-content:center">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p id="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
 <footer class="footer">
-    <div class="footer-content">
-        <h4>© 2026 Mehedi Hasan. All rights reserved | AI Engineer Portfolio</h4>
-        <div class="social-links">
-            <a href="https://www.facebook.com/share/1AEnkvaJMD/" class="social-link" target="_blank">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/mehedi-hasan-abdullah" class="social-link" target="_blank">
-                <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com/mehedi2311" class="social-link" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://x.com/mh_official_99" class="social-link" target="_blank">
-                <i class="fab fa-x-twitter"></i>
-            </a>
-        </div>
+  <div class="footer-inner">
+    <span class="footer-copy">© 2026 Mehedi Hasan. All rights reserved.</span>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="assets/Mehedi_Hasan_CV.pdf" target="_blank">Resume</a>
     </div>
+  </div>
 </footer>
 
-    <script src="script.js"></script>
+<!-- Scripts -->
+<script src="js/script.js"></script>
+<script src="js/chatbot.js"></script>
 </body>
 </html>
